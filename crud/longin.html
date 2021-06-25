@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        
+       margin: 0% auto;
+        font-family: sans-serif;
+       
+        border: none;
+       
+    }
+    body{
+
+        background: rgb(55, 0, 255) 100%;
+
+    }
+    header{
+        text-align: center;
+        font-size: 25px;
+        margin: 20px;
+    }
+    form{
+        
+    align-items: center;
+      width: 450px; 
+      height: 500px;
+    color: white;
+    
+       
+        
+    }
+    
+    #cadastrar{
+            cursor: pointer;
+            margin-top:2rem;
+            margin-left: 35%;
+            padding: 0.5rem;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+             background: linear-gradient(rgb(117, 117, 232) 35%, rgb(55, 0, 255) 100%);
+    }
+   #cadastrar:hover{
+    background: linear-gradient(rgb(60, 60, 243) 35%, rgb(27, 3, 114) 100%);
+
+   }
+        
+    input{
+       
+       font-size: 24px;
+        margin: 0.3rem;
+       display: inline-block;
+       
+    }
+    label{
+        font-size: 24px;
+    }
+    #cargo{
+        width: 130px;
+    }
+
+  
+   
+</style>
+<body>
+      <header>
+          Cadastre-se no Banco de talentos
+      </header> 
+    <form action="destino.php" method="post">
+
+        <label>
+            nome:<input type="text" name="nome" placeholder="seu nome" id="nome">
+        </label>
+        <label>
+            sobrenome:<input type="text" name="sobrenome" placeholder="seu sobrenome" id="sobrenome">
+        </label>
+        <label>
+        cpf:<input type="tel" name="npf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="xxx.xxx.xxx-xx" id="cpf">
+        <br>
+        </label>
+        <label>
+            
+        cargo na empresa:<input type="text" placeholder="ex: marketing" name="cargo" id="cargo">
+        <br>
+        
+    </label>
+    
+        <label>
+         
+        email:<input type="email" placeholder="email@dominio.com" name="email"/> 
+        <br >
+        </label>
+     
+        <label>
+            
+             senha: <input type="password" placeholder="sua senha" name="senha" id="senha">
+             <br>
+         </label>
+  
+         
+        <label>
+            
+        confirmar senha: <input type="password" placeholder="confirmar senha" name="confirmSenha" id="senha">
+        </label>
+        <br>
+       <button id="cadastrar">Cadastrar</button>
+    </form>
+    
+</body>
+</html>
